@@ -3,6 +3,8 @@ import { createStitches } from '@stitches/react'
 export const { styled, globalCss } = createStitches({
   theme: {
     colors: {
+      white: '#FFFFFF',
+
       'yellow-dark': '#C47F17',
       yellow: '#DBAC2C',
       'yellow-light': '#F1E9C9',
@@ -18,9 +20,6 @@ export const { styled, globalCss } = createStitches({
       'base-button': '#E6E5E5',
       'base-input': '#EDEDED',
       'base-card': '#F3F2F2',
-
-      background: '#FAFAFA',
-      white: '#FFFFFF',
     },
 
     fontSizes: {
@@ -32,12 +31,12 @@ export const { styled, globalCss } = createStitches({
       lg: '1.25rem',
       xl: '1.5rem',
       '2xl': '2rem',
-      '3xl': '3rem'
+      '3xl': '3rem',
     },
 
     fonts: {
       header: 'Baloo 2',
-      text: 'Roboto'
-    }
-  }
+      text: 'Roboto',
+    },
+  },
 })
