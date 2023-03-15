@@ -4,6 +4,7 @@ export const { styled, globalCss } = createStitches({
   theme: {
     colors: {
       white: '#FFFFFF',
+      background: '#FAFAFA',
 
       'yellow-dark': '#C47F17',
       yellow: '#DBAC2C',
@@ -35,7 +36,7 @@ export const { styled, globalCss } = createStitches({
     },
 
     fonts: {
-      header: 'Baloo 2',
+      header: '"Baloo 2"',
       text: 'Roboto',
     },
   },
