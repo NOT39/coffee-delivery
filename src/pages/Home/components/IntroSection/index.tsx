@@ -8,7 +8,7 @@ import {
   ItemsContainer,
 } from './styles'
 
-export function Intro() {
+export function IntroSection() {
   return (
     <IntroContainer>
       <div>
@@ -47,6 +47,7 @@ export function Intro() {
             </ItemContainer>
           </ItemsContainer>
         </ContentContainer>
+
         <img src={coffeeIntro} alt="" />
       </div>
     </IntroContainer>

@@ -2,13 +2,14 @@ import { styled } from '../../../../styles'
 
 import introBackground from '../../../../assets/intro-background.svg'
 
-export const IntroContainer = styled('div', {
+export const IntroContainer = styled('section', {
   backgroundImage: `url(${introBackground})`,
 
   '> div': {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
+    padding: '5.75rem 0',
 
     maxWidth: '70rem',
     margin: 'auto',
