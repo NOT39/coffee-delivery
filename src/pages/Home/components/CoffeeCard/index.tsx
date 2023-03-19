@@ -1,4 +1,13 @@
-import { ShoppingCart } from 'phosphor-react'
+import { Minus, Plus, ShoppingCart } from 'phosphor-react'
+import {
+  BuyContainer,
+  CardContainer,
+  CartContainer,
+  ItemAmountContainer,
+  Price,
+  ShopContainer,
+  TagsContainer,
+} from './styles'
 
 interface CoffeeCardProps {
   content: {
@@ -14,26 +23,36 @@ export function CoffeeCard({
   content: { name, description, priceInCents, tags, imageUrl },
 }: CoffeeCardProps) {
   return (
-    <div>
+    <CardContainer>
       <img src={imageUrl} alt="" />
 
-      {tags.map((tag) => (
-        <span key={tag}>{tag}</span>
-      ))}
+      <TagsContainer>
+        {tags.map((tag) => (
+          <span key={tag}>{tag}</span>
+        ))}
+      </TagsContainer>
 
       <h2>{name}</h2>
       <p>{description}</p>
-      <div>
-        <div>{priceInCents}</div>
 
-        <div>
-          <button>-</button>
-          <span>1</span>
-          <button>+</button>
-        </div>
+      <ShopContainer>
+        <Price>
+          R$
+          <span>{priceInCents}</span>
+        </Price>
 
-        <ShoppingCart weight="fill" />
-      </div>
-    </div>
+        <BuyContainer>
+          <ItemAmountContainer>
+            <Minus weight="bold" size={14} />
+            <span>1</span>
+            <Plus weight="bold" size={14} />
+          </ItemAmountContainer>
+
+          <CartContainer>
+            <ShoppingCart weight="fill" size={22} />
+          </CartContainer>
+        </BuyContainer>
+      </ShopContainer>
+    </CardContainer>
   )
 }

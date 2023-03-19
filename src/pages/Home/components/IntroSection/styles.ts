@@ -29,11 +29,11 @@ export const ContentContainer = styled('div', {
 
     fontFamily: '$header',
     fontWeight: 'bolder',
-    fontSize: '$3xl',
+    fontSize: '$4xl',
   },
 
   p: {
-    fontSize: '$md',
+    fontSize: '$lg',
   },
 })
 
